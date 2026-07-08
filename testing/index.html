@@ -94,6 +94,30 @@
       color: #666;
       cursor: default;
     }
+    /* 진행 단계 스테퍼: 기획(1) → 프로토타입/내부테스트(2) → 비공개테스트(3) → 출시(4) */
+    .stage-progress {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 6px;
+    }
+    .stage-progress .dot {
+      flex: 1;
+      height: 4px;
+      border-radius: 2px;
+      background: #2a2a2a;
+    }
+    .stage-progress[data-stage-index="1"] .dot:nth-child(-n+1),
+    .stage-progress[data-stage-index="2"] .dot:nth-child(-n+2),
+    .stage-progress[data-stage-index="3"] .dot:nth-child(-n+3),
+    .stage-progress[data-stage-index="4"] .dot:nth-child(-n+4) {
+      background: #7c5cbf;
+    }
+    .stage-name {
+      display: block;
+      font-size: 0.7rem;
+      color: #888;
+      margin-bottom: 14px;
+    }
     footer {
       margin-top: 80px;
       color: #444;
@@ -113,48 +137,60 @@
     <div class="app-card">
       <h2>한눈에 미세먼지</h2>
       <div class="meta">
-        <span>Android</span><span>v1.0.9 (빌드 71)</span><span>2026-07-02</span><span>비공개 테스트(alpha)</span>
+        <span>Android</span><span>v1.0.9 (빌드 71)</span><span>2026-07-02</span>
       </div>
+      <div class="stage-progress" data-stage-index="3"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+      <span class="stage-name">비공개테스트</span>
       <a class="action ready" href="https://play.google.com/apps/testing/com.anonymous.dustywipe" target="_blank" rel="noopener">설치 / 업데이트 (alpha)</a>
     </div>
 
     <div class="app-card">
       <h2>한눈에 일정</h2>
       <div class="meta">
-        <span>Android</span><span>v1.0.3 (빌드 46)</span><span>2026-07-07</span><span>내부 테스트</span>
+        <span>Android</span><span>v1.0.3 (빌드 46)</span><span>2026-07-07</span>
       </div>
+      <div class="stage-progress" data-stage-index="2"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+      <span class="stage-name">프로토타입(내부테스트)</span>
       <a class="action ready" href="https://play.google.com/apps/internaltest/4701060277425703133" target="_blank" rel="noopener">설치 / 업데이트</a>
     </div>
 
     <div class="app-card">
       <h2>Autoplay</h2>
       <div class="meta">
-        <span>Android</span><span>v1.0.0 (빌드 21)</span><span>2026-07-02</span><span>내부 테스트</span>
+        <span>Android</span><span>v1.0.0 (빌드 21)</span><span>2026-07-02</span>
       </div>
+      <div class="stage-progress" data-stage-index="2"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+      <span class="stage-name">프로토타입(내부테스트)</span>
       <a class="action ready" href="https://play.google.com/apps/internaltest/4701744029398544851" target="_blank" rel="noopener">설치 / 업데이트</a>
     </div>
 
     <div class="app-card">
       <h2>NotiSaver</h2>
       <div class="meta">
-        <span>Android</span><span>v1.3.12 (빌드 31)</span><span>2026-07-02</span><span>내부 테스트</span>
+        <span>Android</span><span>v1.3.12 (빌드 31)</span><span>2026-07-02</span>
       </div>
+      <div class="stage-progress" data-stage-index="2"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+      <span class="stage-name">프로토타입(내부테스트)</span>
       <a class="action ready" href="https://play.google.com/apps/internaltest/4701512644720882095" target="_blank" rel="noopener">설치 / 업데이트</a>
     </div>
 
     <div class="app-card">
       <h2>스타스웜</h2>
       <div class="meta">
-        <span>Android</span><span>v1.0.0 (빌드 2)</span><span>빌드일 미정</span><span>내부 테스트</span>
+        <span>Android</span><span>v1.0.0 (빌드 2)</span><span>빌드일 미정</span>
       </div>
+      <div class="stage-progress" data-stage-index="2"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+      <span class="stage-name">프로토타입(내부테스트)</span>
       <a class="action ready" href="https://play.google.com/apps/internaltest/4700789151014932952" target="_blank" rel="noopener">설치 / 업데이트</a>
     </div>
 
     <div class="app-card">
       <h2>슬라이드 100</h2>
       <div class="meta">
-        <span>Android</span><span>v1.0.0 (빌드 31)</span><span>2026-07-08</span><span>내부 테스트</span>
+        <span>Android</span><span>v1.0.0 (빌드 21)</span><span>2026-07-08</span>
       </div>
+      <div class="stage-progress" data-stage-index="3"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+      <span class="stage-name">비공개테스트</span>
       <a class="action ready" href="https://play.google.com/apps/internaltest/4701464922476051967" target="_blank" rel="noopener">설치 / 업데이트</a>
     </div>
   </div>

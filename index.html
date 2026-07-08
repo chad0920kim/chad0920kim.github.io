@@ -45,6 +45,7 @@
       text-decoration: none;
       color: inherit;
       transition: border-color 0.2s;
+      display: block;
     }
     .app-card:hover { border-color: #555; }
     .app-card h2 {
@@ -66,6 +67,30 @@
       background: #2a2a2a;
       color: #aaa;
     }
+    /* 진행 단계 스테퍼: 기획(1) → 프로토타입/내부테스트(2) → 비공개테스트(3) → 출시(4) */
+    .stage-progress {
+      display: flex;
+      gap: 4px;
+      margin-top: 16px;
+    }
+    .stage-progress .dot {
+      flex: 1;
+      height: 4px;
+      border-radius: 2px;
+      background: #2a2a2a;
+    }
+    .stage-progress[data-stage-index="1"] .dot:nth-child(-n+1),
+    .stage-progress[data-stage-index="2"] .dot:nth-child(-n+2),
+    .stage-progress[data-stage-index="3"] .dot:nth-child(-n+3),
+    .stage-progress[data-stage-index="4"] .dot:nth-child(-n+4) {
+      background: #7c5cbf;
+    }
+    .stage-name {
+      display: block;
+      margin-top: 6px;
+      font-size: 0.7rem;
+      color: #888;
+    }
     footer {
       margin-top: 80px;
       color: #444;
@@ -80,26 +105,60 @@
   </div>
 
   <div class="apps">
-    <div class="app-card">
+    <a class="app-card" href="testing/slidepuzzle-join.html">
+      <h2>슬라이드 100</h2>
+      <p>3x3부터 7x8까지, 100개 스테이지를 담은 클래식 슬라이딩 퍼즐 게임</p>
+      <span class="badge">Android</span>
+      <div class="stage-progress" data-stage-index="3">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+      <span class="stage-name">비공개테스트</span>
+    </a>
+    <a class="app-card" href="testing/dustywipe-join.html">
       <h2>한눈에 미세먼지</h2>
       <p>실시간 위치 기반 미세먼지 & 대기질 정보를 한눈에 확인하는 앱</p>
       <span class="badge">Android</span>
-    </div>
-    <div class="app-card">
+      <div class="stage-progress" data-stage-index="3">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+      <span class="stage-name">비공개테스트</span>
+    </a>
+    <a class="app-card" href="testing/schedulewipe-join.html">
       <h2>한눈에 일정</h2>
       <p>잠금화면에서 바로 확인하는 심플한 일정 위젯 앱</p>
       <span class="badge">Android</span>
-    </div>
-    <div class="app-card">
+      <div class="stage-progress" data-stage-index="2">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+      <span class="stage-name">프로토타입(내부테스트)</span>
+    </a>
+    <a class="app-card" href="testing/autoplay-join.html">
       <h2>Autoplay</h2>
       <p>블루투스 연결 시 음악 앱을 자동으로 재생하는 스마트 자동화 앱</p>
       <span class="badge">Android</span>
-    </div>
-    <div class="app-card">
+      <div class="stage-progress" data-stage-index="2">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+      <span class="stage-name">프로토타입(내부테스트)</span>
+    </a>
+    <a class="app-card" href="testing/notisaver-join.html">
       <h2>NotiSaver</h2>
       <p>놓친 알림을 저장하고 언제든 다시 확인할 수 있는 알림 기록 앱</p>
       <span class="badge">Android</span>
-    </div>
+      <div class="stage-progress" data-stage-index="2">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+      <span class="stage-name">프로토타입(내부테스트)</span>
+    </a>
+    <a class="app-card" href="testing/starswarm-join.html">
+      <h2>스타스웜</h2>
+      <p>우주선을 조종해 몰려오는 적을 격파하는 클래식 슈팅 게임</p>
+      <span class="badge">Android</span>
+      <div class="stage-progress" data-stage-index="2">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+      <span class="stage-name">프로토타입(내부테스트)</span>
+    </a>
   </div>
 
   <footer>© 2026 Chad Kim. All rights reserved.</footer>
