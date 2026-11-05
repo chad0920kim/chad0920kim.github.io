@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー — スケジュールワイプ</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f0f; color: #e8e8e8; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 60px 20px; }
+    .wrap { max-width: 640px; width: 100%; }
+    .top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; flex-wrap: wrap; gap: 12px; }
+    h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 6px; }
+    .updated { color: #888; font-size: 0.85rem; margin-bottom: 40px; }
+    h2 { font-size: 1.05rem; font-weight: 600; margin-top: 32px; margin-bottom: 10px; color: #f0f0f0; }
+    p, li { font-size: 0.95rem; line-height: 1.7; color: #ccc; }
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin-bottom: 6px; }
+    a { color: #b39ddb; }
+    .back-link { color: #666; font-size: 0.85rem; text-decoration: none; }
+    .back-link:hover { color: #999; }
+    .lang-switch { display: flex; gap: 10px; flex-wrap: wrap; font-size: 0.8rem; }
+    .lang-switch a { color: #888; text-decoration: none; }
+    .lang-switch a.current { color: #e8e8e8; font-weight: 600; }
+    .lang-switch a:hover { color: #ccc; }
+    footer { margin-top: 60px; color: #444; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top-row">
+      <a class="back-link" href="../">← ホームへ</a>
+      <div class="lang-switch"><a href="schedulewipe.html">한국어</a><a href="schedulewipe.en.html">English</a><a href="schedulewipe.zh.html">中文</a><a href="schedulewipe.es.html">Español</a><a href="schedulewipe.fr.html">Français</a><a href="schedulewipe.ja.html" class="current">日本語</a></div>
+    </div>
+    <h1>プライバシーポリシー</h1>
+    <p class="updated">スケジュールワイプ (com.hannune.schedule) ・最終更新日 2026年11月5日</p>
+    <h2>1. 収集・利用する情報</h2>
+    <ul>
+      <li>会員登録やログインなしで利用でき、開発者が運営するサーバーはありません。</li>
+      <li><strong>カレンダー</strong>（カレンダーの読み取り権限）：ロック画面やアラームで今日の予定を表示・読み上げるため、端末に登録されたカレンダーの予定（タイトル・時間など）を読み取ります。予定は端末内でのみ処理され、外部への送信や別途の保存は行いません。</li>
+      <li><strong>音声案内</strong>：予定の読み上げには端末にインストールされた音声合成（TTS）エンジンを使用します。アプリが予定の文言を外部の音声合成サーバーへ送ることはありません。</li>
+      <li>アラーム時刻や表示方法などのアプリ設定は端末内にのみ保存されます。</li>
+    </ul>
+    <h2>2. 端末の外へ送信される情報</h2>
+    <p>アラーム時に天気もあわせて案内するため、韓国気象庁の短期予報 API（公共データポータル data.go.kr）に天気情報を要求します。リクエストには固定地域（ソウル）の予報格子座標、予報基準時刻、アプリの API キーのみが含まれ、ユーザーの位置・予定・端末情報などの個人情報は含まれません。インターネット通信の性質上、リクエストを受け取るサーバーには接続元の IP アドレスが伝わります。</p>
+    <h2>3. 権限の利用目的</h2>
+    <ul>
+      <li><strong>他のアプリの上に表示</strong>：ロック画面の上に今日の予定を表示するために使用します。</li>
+      <li><strong>正確なアラーム・起動時の実行</strong>：設定した時刻にアラームを鳴らし、端末の再起動後にもアラームを再登録するために使用します。</li>
+      <li><strong>バッテリー最適化の除外</strong>：省電力状態でもアラームとロック画面の予定が時間どおりに動作するよう要求します。許可するかどうかはユーザーが選択します。</li>
+    </ul>
+    <h2>4. 広告（Google AdMob）</h2>
+    <p>本アプリは Google AdMob を通じてバナー広告を表示します。広告の配信・測定・不正防止のため、Google および広告パートナーが広告 ID（Advertising ID）、おおよその位置情報（IP アドレスに基づく）、アプリの利用状況や端末情報などを収集・利用する場合があります。開発者がこれらの情報を直接受け取ったり保存したりすることはありません。</p>
+    <ul>
+      <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google 広告ポリシー</a></li>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー</a></li>
+    </ul>
+    <p>端末の設定メニューから、パーソナライズ広告の制限や広告 ID のリセット・削除ができます。 プレミアムパスを購入すると広告は表示されません。</p>
+    <h2>5. アプリ内購入</h2>
+    <p>広告の削除などのプレミアム機能は買い切り（プレミアムパス）で提供されます。決済は Google Play の決済システムが処理し、開発者がカード番号などの決済情報を受け取ることはありません。アプリは Google Play を通じて購入が完了したかどうかのみを確認します。</p>
+    <h2>6. 児童のプライバシーについて</h2>
+    <p>スケジュールワイプは児童を対象として特別に制作されたアプリではなく、13歳未満の児童から意図的に個人情報を収集することはありません。</p>
+    <h2>7. データの保存と削除</h2>
+    <p>アプリ設定は端末内にのみ保存され、アプリのデータを消去するかアプリを削除すると一緒に削除されます。カレンダーの予定をアプリが別途保管することはありません。購入履歴は Google Play で管理されます。</p>
+    <h2>8. お問い合わせ</h2>
+    <p>本プライバシーポリシーに関するお問い合わせは、以下のメールアドレスまでご連絡ください。</p>
+    <p><a href="mailto:kyh0920@gmail.com">kyh0920@gmail.com</a></p>
+    <footer>© 2026 Chad Kim. All rights reserved.</footer>
+  </div>
+</body>
+</html>

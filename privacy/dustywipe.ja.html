@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー — ダスティワイプ</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f0f; color: #e8e8e8; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 60px 20px; }
+    .wrap { max-width: 640px; width: 100%; }
+    .top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; flex-wrap: wrap; gap: 12px; }
+    h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 6px; }
+    .updated { color: #888; font-size: 0.85rem; margin-bottom: 40px; }
+    h2 { font-size: 1.05rem; font-weight: 600; margin-top: 32px; margin-bottom: 10px; color: #f0f0f0; }
+    p, li { font-size: 0.95rem; line-height: 1.7; color: #ccc; }
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin-bottom: 6px; }
+    a { color: #b39ddb; }
+    .back-link { color: #666; font-size: 0.85rem; text-decoration: none; }
+    .back-link:hover { color: #999; }
+    .lang-switch { display: flex; gap: 10px; flex-wrap: wrap; font-size: 0.8rem; }
+    .lang-switch a { color: #888; text-decoration: none; }
+    .lang-switch a.current { color: #e8e8e8; font-weight: 600; }
+    .lang-switch a:hover { color: #ccc; }
+    footer { margin-top: 60px; color: #444; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top-row">
+      <a class="back-link" href="../">← ホームへ</a>
+      <div class="lang-switch"><a href="dustywipe.html">한국어</a><a href="dustywipe.en.html">English</a><a href="dustywipe.zh.html">中文</a><a href="dustywipe.es.html">Español</a><a href="dustywipe.fr.html">Français</a><a href="dustywipe.ja.html" class="current">日本語</a></div>
+    </div>
+    <h1>プライバシーポリシー</h1>
+    <p class="updated">ダスティワイプ (com.anonymous.dustywipe) ・最終更新日 2026年11月5日</p>
+    <h2>1. 収集・利用する情報</h2>
+    <ul>
+      <li>会員登録やログインなしで利用でき、開発者が運営するサーバーはありません。</li>
+      <li><strong>位置情報</strong>（正確な位置・おおよその位置）：現在地の微細粉塵（PM）と天気を表示するため、ユーザーが位置情報の権限を許可した場合にのみ使用します。位置はアプリの使用中、またはロック画面の大気質表示機能がオンでそのサービスが実行中の時（この間はステータスバーに通知が表示されます）に確認します。アプリとこのサービスがどちらもオフの時は位置を確認しません。</li>
+      <li>位置座標や移動履歴は保存しません。表示のため、最近確認した地域名、大気質・天気の結果、アプリ設定が端末内に保存される場合があります。</li>
+    </ul>
+    <h2>2. 端末の外へ送信される情報</h2>
+    <ul>
+      <li><strong>韓国気象庁 短期予報 API</strong>（公共データポータル data.go.kr）：位置を約 5km 単位の予報格子座標（nx, ny）に変換した値、予報基準時刻、アプリの API キーを送信します。正確な緯度・経度は送信しません。</li>
+      <li><strong>韓国環境公団 エアコリア大気汚染情報 API</strong>（公共データポータル data.go.kr）：最寄りの測定所名（例：鍾路区）とアプリの API キーを送信します。</li>
+      <li><strong>住所変換（Geocoder）</strong>：位置座標を市・区の名前に変換するため、Android 端末の住所変換機能を使用します。この機能は端末メーカーまたは Google の位置情報サービスが処理し、その際に位置座標が当該サービスに渡される場合があります。</li>
+      <li><strong>ニュース見出し</strong>：ロック画面に表示する韓国の主要ニュースの見出しを Google ニュース RSS から取得します。このリクエストに位置や個人情報は含まれません。</li>
+      <li>インターネット通信の性質上、リクエストを受け取るサーバーには接続元の IP アドレスが伝わります。本アプリは上記の機関・サービスと提携関係になく、公開されている公共データとニュースフィードを利用しています。</li>
+    </ul>
+    <h2>3. 権限の利用目的</h2>
+    <ul>
+      <li><strong>位置情報</strong>：上記「収集・利用する情報」に記載した目的にのみ使用します。</li>
+      <li><strong>他のアプリの上に表示</strong>：ロック画面の上に大気質の霧エフェクトと情報を表示するために使用します。</li>
+      <li><strong>通知・フォアグラウンドサービス・起動時の実行</strong>：ロック画面の大気質表示機能が実行中であることを知らせ、端末の再起動後もユーザーがオンにした機能を再開するために使用します。</li>
+    </ul>
+    <h2>4. 児童のプライバシーについて</h2>
+    <p>ダスティワイプは児童を対象として特別に制作されたアプリではなく、13歳未満の児童から意図的に個人情報を収集することはありません。</p>
+    <h2>5. データの保存と削除</h2>
+    <p>本アプリには広告やアプリ内購入はありません。端末に保存された地域名・結果・設定は、アプリのデータを消去するかアプリを削除すると一緒に削除されます。位置情報の権限は端末の設定でいつでもオフにできます。</p>
+    <h2>6. お問い合わせ</h2>
+    <p>本プライバシーポリシーに関するお問い合わせは、以下のメールアドレスまでご連絡ください。</p>
+    <p><a href="mailto:kyh0920@gmail.com">kyh0920@gmail.com</a></p>
+    <footer>© 2026 Chad Kim. All rights reserved.</footer>
+  </div>
+</body>
+</html>

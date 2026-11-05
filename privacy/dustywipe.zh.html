@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策 — 细尘一览</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f0f; color: #e8e8e8; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 60px 20px; }
+    .wrap { max-width: 640px; width: 100%; }
+    .top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; flex-wrap: wrap; gap: 12px; }
+    h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 6px; }
+    .updated { color: #888; font-size: 0.85rem; margin-bottom: 40px; }
+    h2 { font-size: 1.05rem; font-weight: 600; margin-top: 32px; margin-bottom: 10px; color: #f0f0f0; }
+    p, li { font-size: 0.95rem; line-height: 1.7; color: #ccc; }
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin-bottom: 6px; }
+    a { color: #b39ddb; }
+    .back-link { color: #666; font-size: 0.85rem; text-decoration: none; }
+    .back-link:hover { color: #999; }
+    .lang-switch { display: flex; gap: 10px; flex-wrap: wrap; font-size: 0.8rem; }
+    .lang-switch a { color: #888; text-decoration: none; }
+    .lang-switch a.current { color: #e8e8e8; font-weight: 600; }
+    .lang-switch a:hover { color: #ccc; }
+    footer { margin-top: 60px; color: #444; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top-row">
+      <a class="back-link" href="../">← 返回首页</a>
+      <div class="lang-switch"><a href="dustywipe.html">한국어</a><a href="dustywipe.en.html">English</a><a href="dustywipe.zh.html" class="current">中文</a><a href="dustywipe.es.html">Español</a><a href="dustywipe.fr.html">Français</a><a href="dustywipe.ja.html">日本語</a></div>
+    </div>
+    <h1>隐私政策</h1>
+    <p class="updated">细尘一览 (com.anonymous.dustywipe) · 最后更新：2026年11月5日</p>
+    <h2>1. 我们收集和使用的信息</h2>
+    <ul>
+      <li>无需注册或登录即可使用，开发者不运营任何服务器。</li>
+      <li><strong>位置信息</strong>（精确位置和大致位置）：仅在您授予位置权限时使用，用于显示您所在地的空气质量（微尘）和天气。仅在您使用应用时，或锁屏空气质量显示功能开启且其服务正在运行时（此期间状态栏会显示通知）获取位置。应用和该服务均关闭时，不会获取位置。</li>
+      <li>不会保存位置坐标和移动记录。为便于显示，最近查询的地区名称、空气质量与天气结果以及应用设置可能会保存在设备上。</li>
+    </ul>
+    <h2>2. 发送到设备之外的信息</h2>
+    <ul>
+      <li><strong>韩国气象厅短期预报 API</strong>（公共数据门户 data.go.kr）：发送由您的位置换算出的预报网格坐标（nx、ny，约 5 公里网格）、预报基准时间和应用的 API 密钥。不会发送精确的经纬度。</li>
+      <li><strong>韩国环境公团 AirKorea 大气污染信息 API</strong>（公共数据门户 data.go.kr）：发送最近的监测站名称（例如"钟路区"）和应用的 API 密钥。</li>
+      <li><strong>地址转换（Geocoder）</strong>：为将位置坐标转换为市/区名称，应用使用 Android 设备内置的地址转换功能。该功能由设备制造商或 Google 的位置服务处理，此时您的坐标可能会传递给该服务。</li>
+      <li><strong>新闻标题</strong>：锁屏上显示的韩国主要新闻标题来自 Google 新闻 RSS。该请求不包含位置或个人信息。</li>
+      <li>与所有网络请求一样，接收请求的服务器可以看到您的 IP 地址。本应用与上述机构和服务无合作关系，仅使用公开的公共数据和新闻源。</li>
+    </ul>
+    <h2>3. 权限及其用途</h2>
+    <ul>
+      <li><strong>位置</strong>：仅用于上文"我们收集和使用的信息"中所述的目的。</li>
+      <li><strong>显示在其他应用上层</strong>：用于在锁屏上方显示空气质量雾化效果和信息。</li>
+      <li><strong>通知、前台服务、开机启动</strong>：用于提示锁屏空气质量显示功能正在运行，并在设备重启后重新启动您已开启的功能。</li>
+    </ul>
+    <h2>4. 儿童隐私</h2>
+    <p>细尘一览 并非专门面向儿童的应用，我们不会故意收集 13 岁以下儿童的个人信息。</p>
+    <h2>5. 数据的保存与删除</h2>
+    <p>本应用不含广告，也没有应用内购买。保存在设备上的地区名称、查询结果和设置会在清除应用数据或卸载应用时一并删除。您可以随时在设备设置中关闭位置权限。</p>
+    <h2>6. 联系我们</h2>
+    <p>如您对本隐私政策有任何疑问，请通过以下电子邮件与我们联系。</p>
+    <p><a href="mailto:kyh0920@gmail.com">kyh0920@gmail.com</a></p>
+    <footer>© 2026 Chad Kim. All rights reserved.</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策 — 日程一览</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f0f; color: #e8e8e8; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 60px 20px; }
+    .wrap { max-width: 640px; width: 100%; }
+    .top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; flex-wrap: wrap; gap: 12px; }
+    h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 6px; }
+    .updated { color: #888; font-size: 0.85rem; margin-bottom: 40px; }
+    h2 { font-size: 1.05rem; font-weight: 600; margin-top: 32px; margin-bottom: 10px; color: #f0f0f0; }
+    p, li { font-size: 0.95rem; line-height: 1.7; color: #ccc; }
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin-bottom: 6px; }
+    a { color: #b39ddb; }
+    .back-link { color: #666; font-size: 0.85rem; text-decoration: none; }
+    .back-link:hover { color: #999; }
+    .lang-switch { display: flex; gap: 10px; flex-wrap: wrap; font-size: 0.8rem; }
+    .lang-switch a { color: #888; text-decoration: none; }
+    .lang-switch a.current { color: #e8e8e8; font-weight: 600; }
+    .lang-switch a:hover { color: #ccc; }
+    footer { margin-top: 60px; color: #444; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top-row">
+      <a class="back-link" href="../">← 返回首页</a>
+      <div class="lang-switch"><a href="schedulewipe.html">한국어</a><a href="schedulewipe.en.html">English</a><a href="schedulewipe.zh.html" class="current">中文</a><a href="schedulewipe.es.html">Español</a><a href="schedulewipe.fr.html">Français</a><a href="schedulewipe.ja.html">日本語</a></div>
+    </div>
+    <h1>隐私政策</h1>
+    <p class="updated">日程一览 (com.hannune.schedule) · 最后更新：2026年11月5日</p>
+    <h2>1. 我们收集和使用的信息</h2>
+    <ul>
+      <li>无需注册或登录即可使用，开发者不运营任何服务器。</li>
+      <li><strong>日历</strong>（读取日历权限）：为在锁屏和闹钟中显示并朗读今日日程，应用会读取设备上的日历日程（标题、时间等）。日程仅在设备上处理，不会发送到外部或另行保存。</li>
+      <li><strong>语音播报</strong>：朗读日程使用设备上安装的文字转语音（TTS）引擎。应用不会将日程文字发送到外部语音合成服务器。</li>
+      <li>闹钟时间、显示方式等应用设置仅保存在设备上。</li>
+    </ul>
+    <h2>2. 发送到设备之外的信息</h2>
+    <p>为在闹钟中一并播报天气，应用会向韩国气象厅短期预报 API（公共数据门户 data.go.kr）请求天气信息。请求中仅包含固定地区（首尔）的预报网格坐标、预报基准时间和应用的 API 密钥，不包含您的位置、日程或设备信息等个人信息。与所有网络请求一样，接收请求的服务器可以看到您的 IP 地址。</p>
+    <h2>3. 权限及其用途</h2>
+    <ul>
+      <li><strong>显示在其他应用上层</strong>：用于在锁屏上方显示今日日程。</li>
+      <li><strong>精确闹钟/开机启动</strong>：用于在您设定的时间响铃，并在设备重启后重新登记闹钟。</li>
+      <li><strong>忽略电池优化</strong>：为使闹钟和锁屏日程在省电状态下也能准时运行而请求，是否允许由您决定。</li>
+    </ul>
+    <h2>4. 广告（Google AdMob）</h2>
+    <p>本应用通过 Google AdMob 展示横幅广告。为投放和衡量广告并防止欺诈，Google 及其广告合作伙伴可能会收集并使用广告标识符（Advertising ID）、大致位置（基于 IP 地址）以及应用使用情况和设备信息等。开发者不会直接接收或存储这些信息。</p>
+    <ul>
+      <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google 广告政策</a></li>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隐私政策</a></li>
+    </ul>
+    <p>您可以在设备设置中限制个性化广告，或重置/删除广告标识符。 购买高级通行证后将不再显示广告。</p>
+    <h2>5. 应用内购买</h2>
+    <p>去除广告等高级功能以一次性购买（高级通行证）的方式提供。付款由 Google Play 结算系统处理，开发者不会收到卡号等付款信息。应用仅通过 Google Play 确认是否已完成购买。</p>
+    <h2>6. 儿童隐私</h2>
+    <p>日程一览 并非专门面向儿童的应用，我们不会故意收集 13 岁以下儿童的个人信息。</p>
+    <h2>7. 数据的保存与删除</h2>
+    <p>应用设置仅保存在设备上，清除应用数据或卸载应用时会一并删除。应用不会另行保存您的日历日程。购买记录由 Google Play 管理。</p>
+    <h2>8. 联系我们</h2>
+    <p>如您对本隐私政策有任何疑问，请通过以下电子邮件与我们联系。</p>
+    <p><a href="mailto:kyh0920@gmail.com">kyh0920@gmail.com</a></p>
+    <footer>© 2026 Chad Kim. All rights reserved.</footer>
+  </div>
+</body>
+</html>

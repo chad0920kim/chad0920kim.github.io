@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 — 한눈에 미세먼지</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f0f; color: #e8e8e8; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 60px 20px; }
+    .wrap { max-width: 640px; width: 100%; }
+    .top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; flex-wrap: wrap; gap: 12px; }
+    h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 6px; }
+    .updated { color: #888; font-size: 0.85rem; margin-bottom: 40px; }
+    h2 { font-size: 1.05rem; font-weight: 600; margin-top: 32px; margin-bottom: 10px; color: #f0f0f0; }
+    p, li { font-size: 0.95rem; line-height: 1.7; color: #ccc; }
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin-bottom: 6px; }
+    a { color: #b39ddb; }
+    .back-link { color: #666; font-size: 0.85rem; text-decoration: none; }
+    .back-link:hover { color: #999; }
+    .lang-switch { display: flex; gap: 10px; flex-wrap: wrap; font-size: 0.8rem; }
+    .lang-switch a { color: #888; text-decoration: none; }
+    .lang-switch a.current { color: #e8e8e8; font-weight: 600; }
+    .lang-switch a:hover { color: #ccc; }
+    footer { margin-top: 60px; color: #444; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top-row">
+      <a class="back-link" href="../">← 홈으로</a>
+      <div class="lang-switch"><a href="dustywipe.html" class="current">한국어</a><a href="dustywipe.en.html">English</a><a href="dustywipe.zh.html">中文</a><a href="dustywipe.es.html">Español</a><a href="dustywipe.fr.html">Français</a><a href="dustywipe.ja.html">日本語</a></div>
+    </div>
+    <h1>개인정보처리방침</h1>
+    <p class="updated">한눈에 미세먼지 (com.anonymous.dustywipe) · 최종 수정일 2026-11-05</p>
+    <h2>1. 수집·이용하는 정보</h2>
+    <ul>
+      <li>회원가입이나 로그인 없이 사용할 수 있으며, 개발자가 운영하는 서버가 없습니다.</li>
+      <li><strong>위치 정보</strong>(정밀·대략 위치): 현재 있는 곳의 미세먼지·날씨를 보여 주기 위해, 사용자가 위치 권한을 허용한 경우에만 사용합니다. 위치는 앱을 사용하는 동안, 또는 잠금화면 대기질 표시 기능이 켜져 있어 그 서비스가 실행 중일 때(이때 상태 표시줄에 알림이 표시됩니다) 확인합니다. 앱과 이 서비스가 모두 꺼져 있을 때는 위치를 확인하지 않습니다.</li>
+      <li>위치 좌표와 이동 기록은 저장하지 않습니다. 화면 표시를 위해 최근 조회한 지역 이름과 대기질·날씨 결과, 앱 설정은 기기 안에 저장될 수 있습니다.</li>
+    </ul>
+    <h2>2. 외부로 전송되는 정보</h2>
+    <ul>
+      <li><strong>기상청 단기예보 API</strong>(공공데이터포털 data.go.kr): 위치를 약 5km 단위의 예보 격자 좌표(nx, ny)로 바꾼 값과 예보 기준 시각, 앱의 API 키를 보냅니다. 정밀한 위도·경도는 보내지 않습니다.</li>
+      <li><strong>한국환경공단 에어코리아 대기오염정보 API</strong>(공공데이터포털 data.go.kr): 가까운 측정소 이름(예: 종로구)과 앱의 API 키를 보냅니다.</li>
+      <li><strong>주소 변환(Geocoder)</strong>: 위치 좌표를 시·구 이름으로 바꾸기 위해 Android 기기의 주소 변환 기능을 사용합니다. 이 기능은 기기 제조사 또는 Google의 위치 서비스가 처리하며, 이때 위치 좌표가 해당 서비스로 전달될 수 있습니다.</li>
+      <li><strong>뉴스 헤드라인</strong>: 잠금화면에 표시할 국내 주요 뉴스 제목을 Google 뉴스 RSS에서 가져옵니다. 이 요청에는 위치나 개인정보가 포함되지 않습니다.</li>
+      <li>인터넷 통신의 특성상 요청을 받는 서버에는 접속 IP 주소가 전달됩니다. 이 앱은 위 기관·서비스와 제휴 관계가 아니며, 공개된 공공데이터와 뉴스 피드를 이용합니다.</li>
+    </ul>
+    <h2>3. 권한 사용 목적</h2>
+    <ul>
+      <li><strong>위치</strong>: 위 '수집·이용하는 정보'에 적은 목적에만 사용합니다.</li>
+      <li><strong>다른 앱 위에 표시</strong>: 잠금화면 위에 대기질 안개 효과와 정보를 보여 주기 위해 사용합니다.</li>
+      <li><strong>알림·포그라운드 서비스·부팅 후 실행</strong>: 잠금화면 대기질 표시 기능이 실행 중임을 알리고, 기기를 다시 켠 뒤에도 사용자가 켜 둔 기능을 다시 시작하기 위해 사용합니다.</li>
+    </ul>
+    <h2>4. 아동 대상 서비스 여부</h2>
+    <p>한눈에 미세먼지는 특정하게 아동을 대상으로 제작된 앱이 아니며, 만 13세 미만 아동으로부터 의도적으로 개인정보를 수집하지 않습니다.</p>
+    <h2>5. 정보의 보관 및 삭제</h2>
+    <p>이 앱에는 광고와 인앱 결제가 없습니다. 기기에 저장된 지역 이름·조회 결과·설정은 앱 데이터를 지우거나 앱을 삭제하면 함께 삭제됩니다. 위치 권한은 기기 설정에서 언제든 끌 수 있습니다.</p>
+    <h2>6. 문의</h2>
+    <p>개인정보처리방침에 대한 문의사항은 아래 이메일로 연락해 주세요.</p>
+    <p><a href="mailto:kyh0920@gmail.com">kyh0920@gmail.com</a></p>
+    <footer>© 2026 Chad Kim. All rights reserved.</footer>
+  </div>
+</body>
+</html>

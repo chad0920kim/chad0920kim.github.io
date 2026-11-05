@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 — ZenDoku</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f0f; color: #e8e8e8; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 60px 20px; }
+    .wrap { max-width: 640px; width: 100%; }
+    .top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; flex-wrap: wrap; gap: 12px; }
+    h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 6px; }
+    .updated { color: #888; font-size: 0.85rem; margin-bottom: 40px; }
+    h2 { font-size: 1.05rem; font-weight: 600; margin-top: 32px; margin-bottom: 10px; color: #f0f0f0; }
+    p, li { font-size: 0.95rem; line-height: 1.7; color: #ccc; }
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin-bottom: 6px; }
+    a { color: #b39ddb; }
+    .back-link { color: #666; font-size: 0.85rem; text-decoration: none; }
+    .back-link:hover { color: #999; }
+    .lang-switch { display: flex; gap: 10px; flex-wrap: wrap; font-size: 0.8rem; }
+    .lang-switch a { color: #888; text-decoration: none; }
+    .lang-switch a.current { color: #e8e8e8; font-weight: 600; }
+    .lang-switch a:hover { color: #ccc; }
+    footer { margin-top: 60px; color: #444; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top-row">
+      <a class="back-link" href="../">← 홈으로</a>
+      <div class="lang-switch"><a href="zendoku.html" class="current">한국어</a><a href="zendoku.en.html">English</a></div>
+    </div>
+    <h1>개인정보처리방침</h1>
+    <p class="updated">ZenDoku (com.zendoku.sudoku) · 최종 수정일 2026-11-05</p>
+    <p>ZenDoku(개발자: Chad Kim, 이하 "개발자")는 스도쿠 게임 앱 ZenDoku를 이용하는 분의 개인정보를 아래와 같이 처리합니다.</p>
+    <h2>1. 수집하는 정보</h2>
+    <ul>
+      <li><strong>Google 계정 정보</strong>: ZenDoku는 Google 계정으로 로그인합니다. 로그인 시 Google이 제공하는 이메일 주소, 이름, 프로필 사진 주소(Google 계정에 설정된 경우), Google 계정 식별자를 받아 앱 내 사용자 ID와 함께 저장합니다. Google 계정 비밀번호는 받지 않습니다.</li>
+      <li><strong>게임 기록</strong>: 완료한 퍼즐의 종류·난이도·풀이 시간·퍼즐 번호·완료 시각, 그리고 진행 중인 퍼즐의 칸 숫자·메모·마지막 저장 시각.</li>
+      <li><strong>기기 내 임시 저장</strong>: 인터넷이 끊겨도 이어서 할 수 있도록 진행 중인 퍼즐, 아직 서버에 올리지 못한 완료 기록, 마지막으로 로그인한 사용자 ID를 기기 안에 저장합니다.</li>
+    </ul>
+    <h2>2. 이용 목적</h2>
+    <ul>
+      <li>로그인과 계정 식별</li>
+      <li>게임 기록 저장, 여러 기기에서 이어 하기, 통계·연속 기록 표시</li>
+    </ul>
+    <p>수집한 정보를 판매하거나 마케팅 목적으로 이용하지 않습니다.</p>
+    <h2>3. 저장 위치와 처리 위탁</h2>
+    <p>계정 정보와 게임 기록은 개발자가 이용하는 클라우드 데이터베이스·인증 서비스인 <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a>(Supabase, Inc.)에 저장됩니다. Supabase의 서버는 대한민국 밖에 있을 수 있습니다. 앱과 서버 사이의 통신은 HTTPS로 암호화되며, 각 사용자는 자신의 기록에만 접근할 수 있도록 설정되어 있습니다. Google 로그인 처리에는 Google의 계정 서비스가 사용됩니다.</p>
+    <h2>4. 광고 (Google AdMob)</h2>
+    <p>이 앱은 Google AdMob을 통해 배너 광고와 전면 광고를 표시합니다. 광고 제공·측정·부정 사용 방지를 위해 Google 및 광고 파트너가 광고 식별자(Advertising ID), 대략적인 위치(IP 주소 기반), 앱 이용 및 기기 정보 등을 수집·이용할 수 있습니다. 개발자는 계정 정보나 게임 기록을 광고 회사에 제공하지 않습니다.</p>
+    <ul>
+      <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google 광고 정책</a></li>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+    </ul>
+    <p>기기의 설정 메뉴에서 맞춤 광고를 제한하거나 광고 식별자를 재설정·삭제할 수 있습니다.</p>
+    <h2>5. 아동 대상 서비스 여부</h2>
+    <p>ZenDoku는 특정하게 아동을 대상으로 제작된 앱이 아니며, 만 13세 미만 아동으로부터 의도적으로 개인정보를 수집하지 않습니다. 만 13세 미만 아동의 정보가 수집된 사실을 알게 되면 지체 없이 삭제합니다.</p>
+    <h2>6. 보관 기간과 삭제</h2>
+    <ul>
+      <li>계정 정보와 게임 기록은 계정을 삭제할 때까지 보관합니다.</li>
+      <li><strong>앱에서 삭제</strong>: 앱의 설정 화면에서 '계정 삭제'를 선택하면 계정과 모든 게임 기록이 삭제됩니다.</li>
+      <li><strong>앱 없이 요청</strong>: 가입한 Google 계정의 이메일 주소로 <a href="mailto:kyh0920@gmail.com?subject=ZenDoku%20%EA%B3%84%EC%A0%95%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD">kyh0920@gmail.com</a> 에 제목 "ZenDoku 계정 삭제 요청"으로 메일을 보내 주시면 7일 이내에 처리하고 회신합니다. 자세한 방법은 <a href="zendoku-delete.html">계정 및 데이터 삭제 요청 안내</a>를 참고해 주세요.</li>
+      <li>삭제가 처리되면 계정 정보와 게임 기록은 바로 지워지며, 개발자는 이를 따로 보관하지 않습니다.</li>
+      <li>기기 안에 임시 저장된 데이터는 앱 데이터를 지우거나 앱을 삭제하면 함께 삭제됩니다.</li>
+      <li>Google 계정 설정(보안 → 타사 앱 및 서비스)에서 ZenDoku의 Google 계정 접근을 해제할 수도 있습니다. 이 경우 ZenDoku에 저장된 기록은 삭제되지 않으므로 위 방법으로 삭제를 요청해 주세요.</li>
+    </ul>
+    <h2>7. 문의</h2>
+    <p>개인정보처리방침이나 개인정보 열람·정정·삭제에 대한 문의는 아래 이메일로 연락해 주세요.</p>
+    <p><a href="mailto:kyh0920@gmail.com">kyh0920@gmail.com</a></p>
+    <footer>© 2026 Chad Kim. All rights reserved.</footer>
+  </div>
+</body>
+</html>

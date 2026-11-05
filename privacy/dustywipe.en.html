@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Dusty Wipe</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f0f; color: #e8e8e8; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 60px 20px; }
+    .wrap { max-width: 640px; width: 100%; }
+    .top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; flex-wrap: wrap; gap: 12px; }
+    h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 6px; }
+    .updated { color: #888; font-size: 0.85rem; margin-bottom: 40px; }
+    h2 { font-size: 1.05rem; font-weight: 600; margin-top: 32px; margin-bottom: 10px; color: #f0f0f0; }
+    p, li { font-size: 0.95rem; line-height: 1.7; color: #ccc; }
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin-bottom: 6px; }
+    a { color: #b39ddb; }
+    .back-link { color: #666; font-size: 0.85rem; text-decoration: none; }
+    .back-link:hover { color: #999; }
+    .lang-switch { display: flex; gap: 10px; flex-wrap: wrap; font-size: 0.8rem; }
+    .lang-switch a { color: #888; text-decoration: none; }
+    .lang-switch a.current { color: #e8e8e8; font-weight: 600; }
+    .lang-switch a:hover { color: #ccc; }
+    footer { margin-top: 60px; color: #444; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top-row">
+      <a class="back-link" href="../">← Home</a>
+      <div class="lang-switch"><a href="dustywipe.html">한국어</a><a href="dustywipe.en.html" class="current">English</a><a href="dustywipe.zh.html">中文</a><a href="dustywipe.es.html">Español</a><a href="dustywipe.fr.html">Français</a><a href="dustywipe.ja.html">日本語</a></div>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Dusty Wipe (com.anonymous.dustywipe) · Last updated November 5, 2026</p>
+    <h2>1. Information We Collect and Use</h2>
+    <ul>
+      <li>The app can be used without any sign-up or login, and the developer does not operate any server.</li>
+      <li><strong>Location</strong> (precise and approximate): Used only if you grant location permission, to show air quality and weather for where you are. Location is checked while you are using the app, or while the lock-screen air-quality feature is turned on and its service is running (a notification is shown in the status bar during that time). Location is not checked when both the app and this service are off.</li>
+      <li>Location coordinates and location history are not stored. The name of the area you last looked up, the latest air-quality and weather results, and app settings may be stored on your device for display.</li>
+    </ul>
+    <h2>2. Information Sent Outside Your Device</h2>
+    <ul>
+      <li><strong>Korea Meteorological Administration short-term forecast API</strong> (Public Data Portal, data.go.kr): The app sends your location converted to forecast grid coordinates (nx, ny, roughly 5 km cells), the forecast base time, and the app's API key. Precise latitude/longitude is not sent.</li>
+      <li><strong>Korea Environment Corporation AirKorea air pollution API</strong> (Public Data Portal, data.go.kr): The app sends the name of the nearest monitoring station (e.g. "Jongno-gu") and the app's API key.</li>
+      <li><strong>Address lookup (Geocoder)</strong>: The app uses Android's built-in geocoder to turn coordinates into a city/district name. This is handled by the device maker's or Google's location services, and your coordinates may be passed to that service.</li>
+      <li><strong>News headlines</strong>: Top Korean news headlines for the lock screen are fetched from the Google News RSS feed. This request contains no location or personal information.</li>
+      <li>As with any internet request, the receiving server can see your IP address. The app is not affiliated with these organizations or services; it uses publicly available public data and news feeds.</li>
+    </ul>
+    <h2>3. Permissions and Why We Use Them</h2>
+    <ul>
+      <li><strong>Location</strong>: Used only for the purposes described under "Information We Collect and Use" above.</li>
+      <li><strong>Display over other apps</strong>: Used to show the air-quality fog effect and information over the lock screen.</li>
+      <li><strong>Notifications, foreground service, run at startup</strong>: Used to show that the lock-screen air-quality feature is running and to restart the feature you turned on after the device restarts.</li>
+    </ul>
+    <h2>4. Children's Privacy</h2>
+    <p>Dusty Wipe is not specifically directed at children, and we do not knowingly collect personal information from children under 13.</p>
+    <h2>5. Data Retention and Deletion</h2>
+    <p>This app contains no ads and no in-app purchases. The area name, results, and settings stored on your device are deleted when you clear the app's data or uninstall the app. You can turn off location permission at any time in device settings.</p>
+    <h2>6. Contact</h2>
+    <p>If you have any questions about this privacy policy, please contact us at the email below.</p>
+    <p><a href="mailto:kyh0920@gmail.com">kyh0920@gmail.com</a></p>
+    <footer>© 2026 Chad Kim. All rights reserved.</footer>
+  </div>
+</body>
+</html>

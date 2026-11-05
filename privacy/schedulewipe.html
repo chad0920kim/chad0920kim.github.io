@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 — 한눈에 일정</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f0f; color: #e8e8e8; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 60px 20px; }
+    .wrap { max-width: 640px; width: 100%; }
+    .top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; flex-wrap: wrap; gap: 12px; }
+    h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 6px; }
+    .updated { color: #888; font-size: 0.85rem; margin-bottom: 40px; }
+    h2 { font-size: 1.05rem; font-weight: 600; margin-top: 32px; margin-bottom: 10px; color: #f0f0f0; }
+    p, li { font-size: 0.95rem; line-height: 1.7; color: #ccc; }
+    ul { padding-left: 20px; margin-top: 8px; }
+    li { margin-bottom: 6px; }
+    a { color: #b39ddb; }
+    .back-link { color: #666; font-size: 0.85rem; text-decoration: none; }
+    .back-link:hover { color: #999; }
+    .lang-switch { display: flex; gap: 10px; flex-wrap: wrap; font-size: 0.8rem; }
+    .lang-switch a { color: #888; text-decoration: none; }
+    .lang-switch a.current { color: #e8e8e8; font-weight: 600; }
+    .lang-switch a:hover { color: #ccc; }
+    footer { margin-top: 60px; color: #444; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top-row">
+      <a class="back-link" href="../">← 홈으로</a>
+      <div class="lang-switch"><a href="schedulewipe.html" class="current">한국어</a><a href="schedulewipe.en.html">English</a><a href="schedulewipe.zh.html">中文</a><a href="schedulewipe.es.html">Español</a><a href="schedulewipe.fr.html">Français</a><a href="schedulewipe.ja.html">日本語</a></div>
+    </div>
+    <h1>개인정보처리방침</h1>
+    <p class="updated">한눈에 일정 (com.hannune.schedule) · 최종 수정일 2026-11-05</p>
+    <h2>1. 수집·이용하는 정보</h2>
+    <ul>
+      <li>회원가입이나 로그인 없이 사용할 수 있으며, 개발자가 운영하는 서버가 없습니다.</li>
+      <li><strong>캘린더</strong>(캘린더 읽기 권한): 잠금화면과 알람에 오늘 일정을 보여 주고 읽어 주기 위해 기기에 등록된 캘린더 일정(제목·시간 등)을 읽습니다. 일정은 기기 안에서만 처리되며 외부로 전송하거나 따로 저장하지 않습니다.</li>
+      <li><strong>음성 안내</strong>: 일정 읽어 주기는 기기에 설치된 음성 합성(TTS) 엔진을 사용합니다. 앱이 일정 문구를 외부 음성 합성 서버로 보내지 않습니다.</li>
+      <li>알람 시각, 표시 방식 등 앱 설정은 기기 안에만 저장됩니다.</li>
+    </ul>
+    <h2>2. 외부로 전송되는 정보</h2>
+    <p>알람 때 날씨를 함께 안내하기 위해 기상청 단기예보 API(공공데이터포털 data.go.kr)에 날씨 정보를 요청합니다. 요청에는 고정된 지역(서울)의 예보 격자 좌표, 예보 기준 시각, 앱의 API 키만 포함되며 사용자의 위치·일정·기기 정보 등 개인정보는 포함되지 않습니다. 인터넷 통신의 특성상 요청을 받는 서버에는 접속 IP 주소가 전달됩니다.</p>
+    <h2>3. 권한 사용 목적</h2>
+    <ul>
+      <li><strong>다른 앱 위에 표시</strong>: 잠금화면 위에 오늘 일정을 보여 주기 위해 사용합니다.</li>
+      <li><strong>정확한 알람·부팅 후 실행</strong>: 사용자가 정한 시각에 알람을 울리고, 기기를 다시 켠 뒤에도 알람을 다시 등록하기 위해 사용합니다.</li>
+      <li><strong>배터리 최적화 예외</strong>: 절전 상태에서도 알람과 잠금화면 일정이 제때 동작하도록 요청하며, 허용 여부는 사용자가 선택합니다.</li>
+    </ul>
+    <h2>4. 광고 (Google AdMob)</h2>
+    <p>이 앱은 Google AdMob을 통해 배너 광고를 표시합니다. 광고 제공·측정·부정 사용 방지를 위해 Google 및 광고 파트너가 광고 식별자(Advertising ID), 대략적인 위치(IP 주소 기반), 앱 이용 및 기기 정보 등을 수집·이용할 수 있습니다. 개발자는 이 정보를 직접 받거나 저장하지 않습니다.</p>
+    <ul>
+      <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google 광고 정책</a></li>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 개인정보처리방침</a></li>
+    </ul>
+    <p>기기의 설정 메뉴에서 맞춤 광고를 제한하거나 광고 식별자를 재설정·삭제할 수 있습니다. 프리미엄 이용권을 구매하면 광고가 표시되지 않습니다.</p>
+    <h2>5. 인앱 결제</h2>
+    <p>광고 제거 등 프리미엄 기능은 일회성 구매(프리미엄 이용권)로 제공됩니다. 결제는 Google Play 결제 시스템이 처리하며, 개발자는 카드 번호 등 결제 정보를 받지 않습니다. 앱은 Google Play를 통해 구매 완료 여부만 확인합니다.</p>
+    <h2>6. 아동 대상 서비스 여부</h2>
+    <p>한눈에 일정은 특정하게 아동을 대상으로 제작된 앱이 아니며, 만 13세 미만 아동으로부터 의도적으로 개인정보를 수집하지 않습니다.</p>
+    <h2>7. 정보의 보관 및 삭제</h2>
+    <p>앱 설정은 기기 안에만 저장되며 앱 데이터를 지우거나 앱을 삭제하면 함께 삭제됩니다. 캘린더 일정은 앱이 따로 보관하지 않습니다. 구매 내역은 Google Play에서 관리됩니다.</p>
+    <h2>8. 문의</h2>
+    <p>개인정보처리방침에 대한 문의사항은 아래 이메일로 연락해 주세요.</p>
+    <p><a href="mailto:kyh0920@gmail.com">kyh0920@gmail.com</a></p>
+    <footer>© 2026 Chad Kim. All rights reserved.</footer>
+  </div>
+</body>
+</html>
